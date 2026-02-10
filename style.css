@@ -10,7 +10,9 @@ font-family: 'Rubik', sans-serif;
 body{
     background: pink;
 }
-.start_btn, .info_box{
+.start_btn, 
+.info_box,
+.quiz_box{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -97,4 +99,20 @@ body{
 .buttons button.restart_btn{
     background: rgb(231, 119, 138);
     color: #fff;
+}
+
+.quiz_box{
+    width: 550px;
+    background: #fff;
+    border-radius: 5px;
+}
+.quiz_box header{
+    height: 70px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    justify-content: space-between;
+    border-radius: 5px 5px 0 0;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
 }
