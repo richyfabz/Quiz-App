@@ -42,6 +42,13 @@ body{
     opacity: 0;
     pointer-events: none;
     transform: translate(-50%, -50%) scale(0.9);
+    transition: all 0.3s ease;
+}
+
+.info_box.activeInfo{
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
 }
 
 .info_box .info_title{
@@ -113,7 +120,15 @@ body{
     opacity: 0;
     pointer-events: none;
     transform: translate(-50%, -50%) scale(0.9);
+    transition: all 0.3s ease;
 }
+
+.quiz_box.activeQuiz{
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
+}
+
 .quiz_box header{
     position: relative;
     z-index: 99;
@@ -160,6 +175,15 @@ body{
     border: 1px solid rgb(236, 172, 183);
     user-select: none;
 }
+
+header .time_line{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 3px;
+    background: pink;
+}
+
 .quiz_box section{
     padding: 25px 30px 20px 30px;
 }
@@ -204,6 +228,7 @@ section .option_list .option:hover{
     line-height: 24px;
     font-size: 13px;
     pointer-events: none;
+    transition: all 0.3s ease;
 }
 .option_list .option .icon.tick{
     border-color: rgb(98, 234, 161);
@@ -215,6 +240,23 @@ section .option_list .option:hover{
     color: rgb(255, 100, 100);
     background: rgb(255, 218, 218);
 }
+
+.option_list .option.correct{
+    background: rgb(216, 255, 234);
+    border-color: rgb(98, 234, 161);
+    color: rgb(0, 150, 50);
+}
+
+.option_list .option.incorrect{
+    background: rgb(255, 218, 218);
+    border-color: rgb(255, 100, 100);
+    color: rgb(200, 0, 0);
+}
+
+.option_list .option.disabled{
+    pointer-events: none;
+}
+
 .quiz_box footer{
     height: 60px;
     width: 100%;
@@ -249,11 +291,21 @@ footer .next_btn{
     border-radius: 5px;
     cursor: pointer;
     transition: all 0.3s ease;
+    opacity: 0;
+    pointer-events: none;
+    transform: scale(0.95);
 }
 
 footer .next_btn:hover{
     background: rgb(255, 187, 198);
 }
+
+footer .next_btn.show{
+    opacity: 1;
+    pointer-events: auto;
+    transform: scale(1);
+}
+
 .result_box{
     background: #fff;
     width: 450px;
@@ -267,8 +319,15 @@ footer .next_btn:hover{
     opacity: 0;
     pointer-events: none;
     transform: translate(-50%, -50%) scale(0.9);
-
+    transition: all 0.3s ease;
 }
+
+.result_box.activeResult{
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
+}
+
 .result_box .complete_text{
     font-size: 25px;
     font-weight: 500;
