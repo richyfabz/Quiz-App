@@ -54,14 +54,14 @@ Quiz-App/
 4. Click **"Next Question"** to proceed
 5. View your final score at the end
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 - **HTML5** - Structure and semantic markup
 - **CSS3** - Styling, animations, and responsive design
 - **JavaScript (ES6)** - Quiz logic and DOM manipulation
 - **Font Awesome** - Icons for enhanced UI
 
-## 🎨 Customization
+## Customization
 
 ### Adding Your Own Questions
 
@@ -101,7 +101,7 @@ Modify the CSS variables in `style.css`:
 - Safari (latest)
 - Edge (latest)
 
-## 🤝 Contributing
+## Contributing
 
 Contributions, issues, and feature requests are welcome! Feel free to check the issues page.
 
@@ -121,13 +121,13 @@ This project is open source and available under the [MIT License](LICENSE).
 
 - GitHub: [@richyfabz](https://github.com/richyfabz)
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - Font Awesome for the icon library
 - Inspiration from various quiz applications
 - Tutorial guide used for learning purposes
 
-## 📞 Support
+## Support
 
 If you encounter any issues or have questions, please open an issue in the repository.
 
